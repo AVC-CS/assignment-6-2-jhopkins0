@@ -20,7 +20,5 @@ int getRandom(void)
 }
 int getClosestMed(int rdnum1, int rdnum2, int rdnum3)
 {
-        /***************************************************
-         * Code your program here
-         ***************************************************/
+        int med = (rdnum1 + rdnum2 + rdnum3) / 3;
 }
