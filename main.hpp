@@ -19,9 +19,9 @@ int getClosestMed(int rdnum1, int rdnum2, int rdnum3)
 {
         int med = (rdnum1 + rdnum2 + rdnum3) / 3;
 
-        int med1 = (rdnum1 - med);
-        int med2 = (rdnum2 - med);
-        int med3 = (rdnum3 - med);
+        int med1 = abs(rdnum1 - med);
+        int med2 = abs(rdnum2 - med);
+        int med3 = abs(rdnum3 - med);
 
         if ((med1 <= med2) && (med1 <= med3)){
                 return rdnum1;
